@@ -1,6 +1,6 @@
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="style_google.css" />
+	<link rel="stylesheet" href="app/stylesheets/accueil.scss" />
 	<title>GoogleSixters</title>
 </head>
 <body>
@@ -14,11 +14,12 @@
 	</header>
 
 	<div id="middle">
-		<figure><img src="images/logo.png" class="logo" alt="logo google"></figure>
+		<figure class="logo" alt="logo google"> <%= image_tag 'logo.png' %> </figure>
 
 		<div id="recherche">
 			<input class="barre" type="text" name="search">
-			<img title="Utiliser la recherche vocale" src="images/micro.svg" class="micro" alt="micro google">
+			<figure  class="micro" alt="micro google">
+      <%= image_tag 'micro.svg', width: 30 %> </figure>
 		</div>
 
 		<div id="boutons">
